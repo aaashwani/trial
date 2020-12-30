@@ -1,0 +1,1279 @@
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!-- Meta, title, CSS, favicons, etc. -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Modules</title>
+      <!--for sharing-->
+      <!--<meta property="og:image" content="">
+         <meta property="og:description" content="">
+         <meta property="og:title" content="">
+         <meta property="og:type" content="article">
+         <meta property="og:url" content="">">
+         
+         <meta property="twitter:card" content="summary">
+         <meta property="twitter:creator" content="@Talentedge">
+         <meta property="twitter:site" content="@Talentedge">-->
+      <!--End sharing--> 
+      <!--<link rel="shortcut icon" type="image/x-icon" href="URL">-->
+      <link href="/nls/favicon.ico" type="image/x-icon" rel="icon">
+      <link href="/nls/favicon.ico" type="image/x-icon" rel="shortcut icon">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+   </head>
+   <body class="nav-md">
+      <script language="javascript">
+         var webURL = "https://staging.talentedge.in/nls/";
+           // alert(webURL);
+           var imgURL = "https://staging.talentedge.in/nls/app/webroot/img";
+           var controllerName = "Modules";
+           var actionName = "ManageModules";
+           var FILE_PATH = "https://staging.talentedge.in/nls/app/webroot/js/Filemanager/index.html";
+           var globalSize = "838860800";
+           var modulePlannerContent= false;
+      </script>
+      <div class="container body">
+         <div class="main_container">
+            <div class="col-md-3 left_col">
+               <div class="left_col scroll-view">
+                  <!-- sidebar menu -->
+                  <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                     <div class="menu_section">
+                        <div class="logo">
+                           <a href="/nls/Users/Dashboard"><img class="fullmenuLogo" src="https://staging.talentedge.in/nls/app/webroot/img/logo.png"><img class="smallmenuLogo" src="https://staging.talentedge.in/nls/app/webroot/img/logo-icn.png"></a>
+                           <a class="cross-sign"><i class="fa fa-times" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                        <a class="cross-sign">  
+                        </a>
+                        <ul class="nav side-menu">
+                           <a class="cross-sign">
+                              <!--<li>
+                                 <a href="Users/Dashboard" title="Dashboard"><i class="fa fa-th-large"></i> <span class="lable">Dashboard</span></a>
+                                 </li>  
+                                 <li>
+                                 <a href="Messages/inbox" title="My Inbox"><i class="fa fa-envelope"></i> <span class="lable">Messages</span></a>
+                                 </li>--> 
+                           </a>
+                           <li>
+                              <a class="cross-sign">
+                              </a><a title="Courseware"><i class="nav_icn_main ic_courseware_nav_icn"></i><span class="lable">Courseware</span><span class="fa fa-chevron-down"></span></a>
+                              <ul class="nav child_menu">
+                                 <li>
+                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title=""><span class="lable">Semester-1</span><span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav sub-child-menu">
+                                       <li class="current-page"> <a href="/nls/Modules/ManageModules/batchId:1/sessionId:1"><span class="lable">Organizational Behaviour - Part 1</span></a></li>
+                                       <li> <a href="/nls/Modules/ManageModules/batchId:2/sessionId:1"><span class="lable">Organizational Behaviour - Part 2</span></a></li>
+                                    </ul>
+                                 </li>
+                                 <li>
+                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title=""><span class="lable">Semester-2</span><span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav sub-child-menu">
+                                       <li> <a><span class="lable">Marketing Management - Part 1</span></a></li>
+                                       <li> <a><span class="lable">Marketing Management - Part 2</span></a></li>
+                                    </ul>
+                                 </li>
+                                 <li>
+                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title=""><span class="lable">Semester-3</span><span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav sub-child-menu">
+                                       <li> <a><span class="lable">Human Resource Management - Part 1</span></a></li>
+                                       <li> <a><span class="lable">Human Resource Management - Part 2</span></a></li>
+                                    </ul>
+                                 </li>
+                                 <li>
+                                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title=""><span class="lable">Semester-4</span><span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav sub-child-menu">
+                                       <li> <a><span class="lable">Information Technology Management - Part 1</span></a></li>
+                                       <li> <a><span class="lable">Information Technology Management - Part 2</span></a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li>
+                              <!-- <a href="/nls/AboutUs/digitalLibrary" title="E-Library">
+                                 <i class="nav_icn_main digital_library_nav_icn"></i>
+                                 <span class="lable">E-Library</span>
+                                 </a> -->
+                              <!--        <a title="Digital Library"><i class="nav_icn_main digital_library_nav_icn"></i><span class="lable">Digital Library</span><span class="fa fa-chevron-down"></span></a>-->
+                           </li>
+                           <li>
+                              <a href="/nls/Attendances/myCourseAttendance" title="Attendance"><i class="nav_icn_main personlity_devlp_nav_icn"></i><span class="lable">My Attendance</span></a>
+                           </li>
+                           <li>
+                              <a href="/nls/LiveClass/myLiveClasses" title="My Live Class / Discussion"><i class="nav_icn_main personlity_devlp_nav_icn"></i><span class="lable">My Live Class / Discussion</span></a>
+                           </li>
+                           <li>
+                              <a href="/nls/GradebookSchemes/view/courseId:2/sessionId:1/userId:3" title="Gradebook"><i class="fa fa-graduation-cap"></i><span class="lable">Gradebook</span></a>
+                           </li>
+                           <li>
+                              <a href="/nls/Messages/inbox" title="Inbox"><i class="fa fa-envelope"></i> <span class="lable">Messages</span></a>
+                           </li>
+                           <!--<li>
+                              <a title="Courseware"><i class="nav_icn_main ic_courseware_nav_icn"></i><span class="lable">Gradebook</span><span class="fa fa-chevron-down"></span></a>
+                              </li> -->
+                           <li>
+                              <a href="/nls/AboutUs/helpDesk" title="Help Desk"><i class="nav_icn_main personlity_devlp_nav_icn"></i><span class="lable">Help Desk</span></a>
+                           </li>
+                           <li>
+                              <a href="/nls/Faq/topic" title="FAQ Topics"><i class="nav_icn_main personlity_devlp_nav_icn"></i><span class="lable">FAQ Topics</span></a>
+                           </li>
+                           <!--<li>
+                              <a href="" title="Personality Development"><i class="nav_icn_main personlity_devlp_nav_icn"></i><span class="lable">Personality Development</span></a>
+                              </li>-->  
+                           <!--<li>
+                              <a title="Live Classes"><i class="fa fa-desktop"></i> <span class="lable">Live Classes</span><span class="fa fa-chevron-down"></span></a>
+                              </li>-->
+                           <!--<li>
+                              <a title="Assignments"><i class="fa fa-sticky-note"></i> <span class="lable">Assignments</span><span class="fa fa-chevron-down"></span></a>
+                                    </li>
+                              <li>
+                              <a title="Assessments"><i class="fa fa-pencil-square-o"></i> <span class="lable">Assessments</span><span class="fa fa-chevron-down"></span></a>
+                              </li>-->
+                           <!--<li>
+                              <a href="Messages/sent" title="Inbox"><i class="fa glyphicon-envelope"></i> <span class="lable">Sent</span></a>
+                              </li> -->        
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="black-drop" style=""></div>
+                  <!-- /sidebar menu -->
+               </div>
+            </div>
+            <!-- top navigation -->        
+            <div class="top_nav">
+               <div class="nav_menu">
+                  <nav>
+                     <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                     </div>
+                     <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                           <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                           <img src="https://staging.talentedge.in/nls/app/webroot/img/img.jpg">Student1_MBA     <span class=" fa fa-angle-down"></span>
+                           </a>
+                           <ul class="dropdown-menu dropdown-usermenu pull-right">
+                              <li><a href="/nls/Users/profile/userId:3">Profile</a></li>
+                              <!-- <li>
+                                 <a href="javascript:;">
+                                 <span class="badge bg-red pull-right">50%</span>
+                                 <span>Settings</span>
+                                 </a>
+                                 </li> -->
+                              <!-- <li><a href="javascript:;">Help</a></li> -->
+                              <li><a href="https://staging.talentedge.in/nls/Users/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                           </ul>
+                        </li>
+                        <!--<li role="presentation" class="dropdown" id="topMessageSpace">
+                           </li>-->
+                        <!-- <li role="presentation" class="dropdown" id="topNotification">
+                           </li> -->
+                        <!-- <li><a href="#"><i class="fa fa-search"></i></a></li> -->
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+            <!-- /top navigation -->
+            <!-- page content -->
+            <div class="right_col body" role="main">
+               <div class="successMessage" style="display: none;">
+                  <div id="flashMsg">
+                     <a class="noty-remove" href="javascript:void(0);"><i class="fa fa-times" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+               <div class="loader" style="display:none;" id="loaderImg">
+                  <img src="https://staging.talentedge.in/nls/app/webroot/img/Loader.gif">
+               </div>
+               <link rel="stylesheet" type="text/css" href="/nls/css/circle.css">
+               <style>
+                  .c100.x-small span:hover {
+                  left: 1px;
+                  top: 1px;
+                  }
+               </style>
+               <!-- page content -->
+               <div class="page-header no-padd-page-head mbaModule">
+                  <div class="page-title uls-digital-lib-title">
+                     <div class="course-detail-top">
+                        <div class="col-md-8 col-xs-12">
+                           <div class="course-left-course-name">
+                              <img src="https://staging.talentedge.in/nls/app/webroot/img/dummy-course.gif">
+                              <h2>  Chandigarh University - MBA-Marketing   </h2>
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-xs-12 text-right">
+                           <a href="/nls/Tests/view/cId:11/batchId:1" title="Continue from where
+                              you left off the last time" class="top-coure-continue">Continue learning</a>
+                        </div>
+                        <div class="courseDetailsPart">
+                           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 top-course-left-info no-padding-left">
+                              <div class="course-inst-det-right">
+                                 <div class="course-left-inst subjectIcon">
+                                    <img src="https://staging.talentedge.in/nls/app/webroot/img/dummy-course.gif">
+                                    <h3>Organizational Behaviour - Part 1  <span>Description...</span></h3>
+                                 </div>
+                                 <div class="course-left-sessn">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 top-left-learing-mid">
+                              <div class="col-xs-12 no-padding  course-rating-review">
+                                 <h3>Ratings</h3>
+                                 <div class="top-course-starrate">
+                                    <span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span><span class="glyphicon .glyphicon-star-empty glyphicon-star-empty"></span>      
+                                 </div>
+                                 <!--<a href="#">Edit Your Rating</a>-->
+                              </div>
+                           </div>
+                           <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12 top-left-learing-mid">
+                              <div class="top-course-pro">
+                                 <div class="mycourse-percetage-bar">
+                                    <h3>65% <span>Progress</span></h3>
+                                    <div class="parblk">
+                                       <div class="progress">
+                                          <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="30" aria-valuemax="100" style="width:0%">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+               <div class="x_panel flt-left">
+                  <div class="x_content tabNav">
+                     <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                        <script type="text/javascript" src="/nls/js/responsive-tabs.js"></script>
+                        <ul id="myTab" class="nav nav-tabs bar_tabs web-responsive" role="tablist">
+                           <li role="presentation" class=""><a href="/nls/Modules/ManageModules/batchId:1/sessionId:1">COURSEWARE</a>
+                           </li>
+                           <li role="presentation" class="active"><a href="/nls/LiveClass/index/batchId:1/sessionId:1">LIVE CLASSES</a>
+                           </li>
+                           <!--<li role="presentation" class=""><a href="Assignments/index/batchId:" >ASSIGNMENTS 1</a>
+                              </li>-->        
+                           <li role="presentation" class=""><a href="/nls/Tests/index/batchId:1/sessionId:1">ASSIGNMENTS</a>
+                           </li>
+                           <!--<li role="presentation" class=""><a href="#Tab_CourseInfo" role="tab" data-toggle="tab" aria-expanded="false">COURSE INFO</a>
+                              </li>-->
+                        </ul>
+                        <div class="panel-group responsive visible-xs visible-sm" id="collapse-myTab">
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4 class="panel-title">
+                                    <a href="/nls/Modules/ManageModules/batchId:1">MODULES</a>
+                                 </h4>
+                              </div>
+                              <div id="" class="panel-collapse collapse"></div>
+                           </div>
+                           <!--<div class="panel panel-default">
+                              <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                      <a href="/nls/LiveClass/index/batchId:1">LIVE CLASSES</a>
+                                  </h4>
+                              </div>
+                              <div id="" class="panel-collapse collapse"></div>
+                                  
+                              </div>
+                              <div class="panel panel-default">
+                              <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                      <a href="/nls/Assignments/index/batchId:1">ASSIGNMENTS</a>
+                                  </h4>
+                              </div>
+                              <div id="" class="panel-collapse collapse"></div>
+                                  
+                              </div>-->
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4 class="panel-title">
+                                    <a href="/nls/Tests/index/batchId:1">ASSESSMENTS</a>
+                                 </h4>
+                              </div>
+                              <div id="" class="panel-collapse collapse"></div>
+                           </div>
+                           <!--<div class="panel panel-default">
+                              <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                      <a href="/nls/Contents/BatchDiscussion/batchId:1">DISCUSSIONS</a>
+                                  </h4>
+                              </div>
+                              <div id="" class="panel-collapse collapse"></div>
+                                  
+                              </div>-->
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4 class="panel-title">
+                                    <a href="/nls/StudentLists/index/batchId:1">BATCHMATES</a>
+                                 </h4>
+                              </div>
+                              <div id="" class="panel-collapse collapse"></div>
+                           </div>
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4 class="panel-title">
+                                    <a href="/nls/Testimonials/index/batchId:1">TESTIMONIALS</a>
+                                 </h4>
+                              </div>
+                              <div id="" class="panel-collapse collapse"></div>
+                           </div>
+                        </div>
+                        <!--<script type="text/javascript">
+                           (function($) {
+                               fakewaffle.responsiveTabs(['xs', 'sm']);
+                           })(jQuery);
+                           </script>-->
+                        <style>ul.bar_tabs > li{margin-left:0px;}</style>
+                        <div id="myTabContent" class="tab-content grybg ">
+                           <div class="filterbox">
+                              <div class="titleBox">
+                                 <div class="moduleTitle"><h3>Live Classes</div>
+                                 <div class="classAttendence">90% <span class="attedence">Attendance</span> </div>
+                              </div>
+                              <div class="filterItemContainer">
+                                 <div class="filterItem active">All</div>
+                                 <div class="filterItem">About to start</div>
+                                 <div class="filterItem">Upcomming</div>
+                                 <div class="filterItem">Concluded</div>
+                              </div>
+                           </div>
+                           <div role="tabpanel" class="tab-pane fade active in chapterDetails" id="Tab_Modules" aria-labelledby="home-tab">
+                              <!-- start accordion -->
+                              <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true" style="margin-top:8px;">
+                                 <!--*********** modules start *******************-->
+                                 <div class="panel openpanel" id="md_1">
+                                    <!-- <span>
+                                       <a class="collapsepanel" id="1" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                          <div class="panel-heading" title="Explore Module">
+                                             <div class="flexcontainer">
+                                                <div class="chaptercount">
+                                                   <h3>Chapter -1</h3>
+                                                   <p>Financial Account</p>
+                                                </div>
+                                                <div class="learningAct">
+                                                   <div class="iconSection">
+                                                      <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                                   </div>
+                                                   <h3><span>15</span>Learning Process</h3>
+                                                </div>
+                                                <div class="assignmentClass">
+                                                   <div class="iconSection">
+                                                      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                   </div>
+                                                   <h3><span>4</span>Assignment</h3>
+                                                </div>
+                                                <div class="liveClass">
+                                                   <div class="iconSection">
+                                                      <i class="fa fa-calculator" aria-hidden="true"></i>
+                                                   </div>
+                                                   <h3><span>7</span>Live Class</h3>
+                                                </div>
+                                                <div class="classProgress">
+                                                   <h3>65% &nbsp;&nbsp;&nbsp; progress</h3>
+                                                   <progress id="file" value="32" max="100"> 32% </progress>
+                                                </div>
+                                                <div class="actioBtn">
+                                                   <div class="btnRounded">
+                                                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </span> -->
+                                    <div id="collapse1" class="panel-collapse collapse in " role="tabpanel" aria-labelledby="1">
+                                       <div class="panel-body">
+                                          <div class="row" id="moduleContent-1">
+                                             <!-- Learning  Activity -->
+                                             <div class="col-xs-12 col-md-12">
+                                                <div class="sec-activity">
+                                                   <div class="sec-panel">
+                                                      <div class="flexcontainerinner">
+                                                         <div class="learningAct ">
+                                                            <div class="iconSection">
+                                                               <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                                            </div>
+                                                            <div class="detailslearing">
+                                                               <h3 class="leaning">Learning Notes  </h3>
+                                                               <span class="noteBook btn btn-xs"> Ebook - Digital text book</span> 
+                                                               <span class="noteBook btn btn-xs"> Live class</span> 
+                                                               <span class="noteBook btn btn-xs"> Assignment</span> 
+                                                               
+                                                               <p> Description: Object-Oriented Programming Basics With Java</p>
+                                                               <p> Published On - Jul 01, 2020, Due Date - Jul 01, 2025 </p>
+                                                            </div>
+                                                         </div>
+
+                                                         <div class="durationLacture">
+                                                            <span class="durationTime"> Duration: 43mins</span>
+                                                            <span class="DurationPage"> Pages: 40</span> 
+                                                            <span class="DurationeExtra"> Questionnaire: 40</span> 
+                                                         </div>
+                                                         <div class="ProgressLacture">
+                                                            <p>65%  <span class="complite">completed</span></p>
+                                                            <progress id="file" value="32" max="100"> 32% </progress>
+                                                         </div>
+                                                         <div class="nextLacture">
+                                                            <div class="btnRounded">
+                                                               <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-md-12">
+                                                  <div class="sec-activity">
+                                                   <div class="sec-panel">
+                                                      <div class="flexcontainerinner">
+                                                         <div class="learningAct ">
+                                                            <div class="iconSection">
+                                                               <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                                            </div>
+                                                            <div class="detailslearing">
+                                                               <h3 class="leaning">Learning Notes  </h3>
+                                                               <span class="noteBook btn btn-xs"> Ebook - Digital text book</span> 
+                                                               
+                                                               
+                                                               <p> Description: Object-Oriented Programming Basics With Java</p>
+                                                               <p>Published On - Jul 01, 2020, Due Date - Jul 01, 2025 </p>
+                                                            </div>
+                                                         </div>
+
+                                                         <div class="durationLacture">
+                                                            <span class="durationTime"> Duration: 43mins</span>
+                                                            <span class="DurationPage"> Pages: 40</span> 
+                                                            <span class="DurationeExtra"> Questionnaire: 40</span> 
+                                                         </div>
+                                                         <div class="ProgressLacture">
+                                                            <p>65%  <span class="complite">completed</span></p>
+                                                            <progress id="file" value="32" max="100"> 32% </progress>
+                                                         </div>
+                                                         <div class="nextLacture">
+                                                            <div class="btnRounded">
+                                                               <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-12">
+                                                   <div class="sec-activity">
+                                                   <div class="sec-panel">
+                                                      <div class="flexcontainerinner">
+                                                         <div class="learningAct ">
+                                                            <div class="iconSection">
+                                                               <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                                            </div>
+                                                            <div class="detailslearing">
+                                                               <h3 class="leaning">Learning Notes  </h3>
+                                                               
+                                                               <span class="noteBook btn btn-xs"> live class</span> 
+                                                               
+                                                               <p> Description: Object-Oriented Programming Basics With Java</p>
+                                                               <p>Published On - Jul 01, 2020, Due Date - Jul 01, 2025 </p>
+                                                            </div>
+                                                         </div>
+
+                                                         <div class="durationLacture">
+                                                            <span class="durationTime"> Duration: 43mins</span>
+                                                            <span class="DurationPage"> Pages: 40</span> 
+                                                         </div>
+                                                         <div class="ProgressLacture">
+                                                            <p>65%  <span class="complite">completed</span></p>
+                                                            <progress id="file" value="32" max="100"> 32% </progress>
+                                                         </div>
+                                                         <div class="nextLacture">
+                                                            <div class="btnRounded">
+                                                               <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-12">
+                                                   <div class="sec-activity">
+                                                      <div class="sec-panel">
+                                                         <div class="col-xs-12 col-md-1">
+                                                            <div class="img-circle"><img src="https://staging.talentedge.in/nls/app/webroot/img/live_class.png"></div>
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-6">
+                                                            <div class="listing-ttl"><span>Financial Accounting Live Class</span>
+                                                               <span class="hand"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+                                                               <span class="label mdl-list">Live Class</span>                                
+                                                            </div>
+                                                            <div class="list-Topic">
+                                                               <span>Published On</span> - Jul 01, 2020 12:00 AM
+                                                            </div>
+                                                            <div class="list-Topic"> Description: Financial Accounting from Guest Faculty</div>
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-2">
+                                                            <div style="float:right;">
+                                                               <div class="c100 p0 x-small">
+                                                                  <span>0%</span>
+                                                                  <div class="slice">
+                                                                     <div class="bar"></div>
+                                                                     <div class="fill"></div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-3">
+                                                            <div class="panel-info ">
+                                                               <span>Duration: <strong>5 Hrs 0 Mins</strong></span>
+                                                            </div>
+                                                            <div class="pnl-action" id="4_live_class"><a href="javascript:void(0);" class="attempt" onclick="loadLiveClass(4,1)">Join</a></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-12">
+                                                   <div class="sec-activity">
+                                                      <div class="sec-panel">
+                                                         <div class="col-xs-12 col-md-1">
+                                                            <div class="img-circle"><img src="https://staging.talentedge.in/nls/app/webroot/img/practice-test-icn.png"></div>
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-6">
+                                                            <div class="listing-ttl"><span>Objective Test </span>
+                                                               <span class="hand"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+                                                               <span class="label mdl-list">Assessment</span> <span class="label mdl-list"><strong>Practice</strong></span>                                
+                                                            </div>
+                                                            <div class="list-Topic">
+                                                               <span>Published On</span> - Jul 01, 2020, <span>Due Date</span> - Jul 01, 2025                            
+                                                            </div>
+                                                            <div class="list-Topic"> Description: Objective Test of July Month </div>
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-2">
+                                                            <div style="float:right;">
+                                                               <div class="c100 p0 x-small">
+                                                                  <span>0%</span>
+                                                                  <div class="slice">
+                                                                     <div class="bar"></div>
+                                                                     <div class="fill"></div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-3">
+                                                            <div class="panel-info ">
+                                                               <span>Max Marks: <strong>20</strong><span>  <span>Min Marks: <strong>8</strong><span>
+                                                               </span></span></span></span>
+                                                            </div>
+                                                            <div class="pnl-action" id="">
+                                                               <a href="/nls/Tests/view/batchId:1/cId:5/sessionId:1">
+                                                                  <div class="attempt">View</div>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-12">
+                                                   <div class="sec-activity">
+                                                      <div class="sec-panel">
+                                                         <div class="col-xs-12 col-md-1">
+                                                            <div class="img-circle"><img src="https://staging.talentedge.in/nls/app/webroot/img/assignment.png"></div>
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-6">
+                                                            <div class="listing-ttl"><span>Subjective Assignment </span>
+                                                               <span class="hand"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+                                                               <span class="label mdl-list">Assignment</span>                                
+                                                            </div>
+                                                            <div class="list-Topic">
+                                                               <span>Published On</span> - Jul 01, 2020, <span>Due Date</span> - Jul 01, 2025, <span>Mode</span> - Online                                                                
+                                                            </div>
+                                                            <div class="list-Topic"> Description: Subjective Assignment of July Month</div>
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-2">
+                                                            <div style="float:right;">
+                                                               <div class="c100 p0 x-small">
+                                                                  <span>0%</span>
+                                                                  <div class="slice">
+                                                                     <div class="bar"></div>
+                                                                     <div class="fill"></div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-3">
+                                                            <div class="panel-info ">
+                                                            </div>
+                                                            <div class="pnl-action" id="">
+                                                               <span class="result">Not Submitted</span>
+                                                               <a href="/nls/Assignments/view/batchId:1/cId:6/sessionId:1">
+                                                                  <div class="attempt">View</div>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-12">
+                                                   <div class="sec-activity">
+                                                      <div class="sec-panel">
+                                                         <div class="col-xs-12 col-md-1">
+                                                            <div class="img-circle"><img src="https://staging.talentedge.in/nls/app/webroot/img/discussion.png"></div>
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-6">
+                                                            <div class="listing-ttl"><span>Health &amp; Fitness for Busy People</span>
+                                                               <span class="hand"><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+                                                               <span class="label mdl-list">Discussion</span>                                
+                                                            </div>
+                                                            <div class="list-Topic">
+                                                               <span>Published On</span> - Jul 24, 2020 08:00 PM, <span>End Date</span> - Dec 31, 2020 08:00 PM
+                                                               <span>, Published By: </span> (Faculty) 
+                                                            </div>
+                                                            <div class="list-Topic"> Description: Health &amp; Fitness for Busy People</div>
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-2">
+                                                         </div>
+                                                         <div class="col-xs-12 col-md-3">
+                                                            <div class="panel-info diss">
+                                                               <div class="pnl-action">
+                                                                  <div class="panel-info diss">
+                                                                     <div class="result">
+                                                                        0 Comment
+                                                                     </div>
+                                                                     <a href="/nls/Contents/discussion/moduleId:1/contentId:7" class="attempt">Reply</a>                                        
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="pnl-action" id="">
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="loader-with-message" style="display: none;" id="loaderImgImg">
+                                                   <div>
+                                                      <div>
+                                                         <span class="loader-msg">
+                                                            Please Wait...
+                                                            <p>Lab initialization is in progress.. It may take few minutes!</p>
+                                                         </span>
+                                                         <img src="/nls/img/Loader.gif">
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <script>
+                                                   function updateContentAccessLog(contentId) {
+                                                     var formData = {
+                                                       content_id: contentId,
+                                                     }
+                                                   
+                                                     log_activity(formData);
+                                                     return false;     
+                                                   }
+                                                </script>
+                                             </div>
+                                             <div class="col-xs-12 col-md-12" id="noLearningActivity_1" style="display:none;">
+                                                <div class="activityType">No Learning  Activity</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!--**************** End Modules ******************-->
+                                    <div class="panel " id="md_2">
+                                       <span>
+                                          <a class="collapsepanel" id="2" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                             <div class="panel-heading" title="Explore Module">
+                                                <div class="col-xs-9 col-md-11 no-padding-left">
+                                                   <h4 class="panel-title">Chapter -2</h4>
+                                                   <ul class="module-live-learning-list">
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </a>
+                                       </span>
+                                       <div class="panel-action">
+                                          <span>
+                                          <a class="collapsepanel" role="tab" id="2" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                          <img data-toggle="tooltip" data-placement="top" title="" src="https://staging.talentedge.in/nls/app/webroot/img/collapse.png" data-original-title="Explore Module">
+                                          </a>
+                                          </span>
+                                          <span style="margin-right:20px;">
+                                             <div class="c100 p0 x-small">
+                                                <span>0%</span>
+                                                <div class="slice">
+                                                   <div class="bar"></div>
+                                                   <div class="fill"></div>
+                                                </div>
+                                             </div>
+                                          </span>
+                                          <!--******** Show Expert module ****************-->
+                                       </div>
+                                       <div id="collapse2" class="panel-collapse collapse " role="tabpanel" aria-labelledby="2">
+                                          <div class="panel-body">
+                                             <div class="col-xs-12 col-md-12" id="noLearningActivity_2" style="display:none;">
+                                                <div class="activityType">No Learning  Activity</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!--**************** End Modules ******************-->
+                                 </div>
+                                 <!-- end of accordion -->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade bs-example-modal-view-displayorder" tabindex="-1" role="dialog" aria-hidden="true" id="displayorderDiv">
+                  <div class="modal-dialog modal-md">
+                     <div class="modal-content" id="displayorderList">
+                        <button type="button" class="close cmmt-close set_disp_close" data-dismiss="modal">×</button>
+                        <div class="cmmt_inner_main">
+                           <form action="/nls/Batch/deletemsg" id="listFormDisplayorder" method="post" accept-charset="utf-8">
+                              <div style="display:none;"><input type="hidden" name="_method" value="POST"></div>
+                              <div class="cmmt-pop-head" id="displayorderHeading">Set display order</div>
+                              <div id="respMsg" class="redDiv text-center"></div>
+                              <div class="cmmt_inner_sec">
+                                 <img src="/nls//img/loader.gif">Please wait...
+                              </div>
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-default displayOrderSubmit">Submit</button>
+                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <script type="text/javascript" src="/nls/js/virtual_lab.js"></script><!-- /page content -->
+               <script>
+                  /*var scrollPos = $(".openpanel").offset().top;
+                  $('html, body').animate({
+                      scrollTop: ($('.openpanel').first().offset().top)
+                  }, 1000);
+                  
+                  $(".collapsepanel").click(function () {
+                      var open = $(this).parent().parent().parent().hasClass('openpanel');
+                      if (open) {
+                          $(this).parent().parent().parent().toggleClass('openpanel');            
+                           $('html, body').animate({
+                              scrollTop: ($('#'+this.id).first().offset().top)
+                          }, 1000);
+                      } else {
+                          $('.panel').removeClass("openpanel");
+                          $(this).parent().parent().parent().toggleClass('openpanel');
+                  
+                          $('html, body').animate({
+                              scrollTop: ($('#'+this.id).first().offset().top)
+                          }, 1000);
+                      }
+                    });*/
+                  
+                    /********* ajax fetch Modules ********/
+                  
+                    $(".collapsepanel").on('click', function (e) {
+                      e.preventDefault();
+                      module_id = this.id;
+                      /********** Start by sahoo ********************/
+                  
+                      var open = $(this).hasClass('openpanel');
+                          //if(open){
+                            $(this).toggleClass('openpanel'); 
+                  
+                            var el = $("#md_" + module_id);
+                            var elOffset = el.offset().top;
+                  
+                            var elHeight = el.height();
+                            var windowHeight = $(window).height();
+                  
+                            var offset;
+                            if (elHeight < windowHeight) {
+                                  //offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+                                }else {
+                                  //offset = elOffset;
+                                }
+                  
+                                if(offset > 1380){
+                                  //offset = offset - 1380;
+                                }
+                                var speed = 700;
+                             // 
+                              //$('html, body').animate({scrollTop:offset}, speed);
+                  
+                              /*var paneltoggled = $("#md_" + module_id);
+                              $(".panel").animate({scrollTop: paneltoggled.offset().top});*/
+                              
+                  
+                              /*var scrollTop     = $(window).scrollTop(),
+                              elementOffset = $('#md_'+module_id).offset().top,
+                              distance      = (elementOffset - scrollTop);
+                              $('html, body').animate({ scrollTop: distance }, 1000);*/
+                  
+                          //}
+                          /********** end ****************************/
+                  
+                          if ($('#moduleContent-' + module_id).length == 0) {
+                            $('#noLearningActivity_' + module_id).show();
+                            return;
+                          }
+                          if ($('#moduleContent-' + module_id).html() != 0) {
+                            return;
+                          }        
+                  
+                          $("#loaderImg").show();
+                          $.get(webURL + "Modules/fetchContents/sessionId:1/batchId:1/moduleId:" + module_id, function (data) {
+                  
+                            if (data) {
+                              $('#moduleContent-' + module_id).html(data);               
+                            } else{
+                              $('#moduleContent-' + module_id).html('');
+                              console.log("Error...");
+                            }
+                            $("#loaderImg").hide();
+                          });
+                        });
+                  
+                  
+                  
+                    /***********End of ajax pagination  ************/
+               </script>
+               <script>
+                  /*Update Live Class Button Status on every 30 seconds*/
+                  var token = false;
+                  var extensionInstalled = false;
+                  
+                  function ChangeLiveClassStatus()
+                  {
+                    var batchId = "1";
+                    $.ajax({
+                      url: "/nls/LiveClass/ChangeLiveClassStatus",
+                      type: "post",
+                      data: {'batchId': batchId},
+                      success: function (data) {
+                        var json = JSON.parse(data);
+                        if (json.status == 1) {
+                          $.each(json.liveclass, function (ContentIdIndex, elementHtml) {
+                                    //alert(ContentIdIndex+"="+elementHtml);
+                                    if ($('#' + ContentIdIndex + '_live_class').length) {
+                                      $('#' + ContentIdIndex + '_live_class').html(elementHtml);
+                  
+                                    }
+                                  });
+                        }
+                      },
+                      error: function (jqXHR, textStatus, errorThrown) {
+                        console.log(textStatus, errorThrown);
+                      }
+                    });
+                  }
+                  
+                  ChangeLiveClassStatus();
+                  setInterval(function () {
+                    ChangeLiveClassStatus();
+                  }, 30 * 1000); // 60 * 1000 milsec
+                  
+                  /*Login to Live Class*/
+                  function loadLiveClass(cid, bid)
+                  {
+                    $.ajax({
+                      url: "/nls/LiveClass/loadMe",
+                      type: "post",
+                      data: {'cid': cid, 'bid': bid},
+                      beforeSend: function (msg) {
+                        $("#loaderImg").show();
+                      },
+                      success: function (data) {
+                        $("#loaderImg").hide();
+                        var json = JSON.parse(data);
+                        if (json.status == 1 && json.URL != '') {
+                          if(json.hasOwnProperty('token')){
+                  
+                            token = json.token;
+                            console.log('token'+token);
+                            clearStorage();
+                            add();
+                          }
+                          window.open(json.URL, 'My Live Session');
+                        }
+                      },
+                      async: false,
+                      error: function (jqXHR, textStatus, errorThrown) {
+                        console.log(textStatus, errorThrown);
+                      }
+                    });
+                  }
+                  
+               </script>
+               <script type="text/javascript">
+                  /**** Genrate token and save into indexddb ********/
+                  var dbExists = true;
+                  
+                  /****** End *********/
+                  
+                  
+                  //prefixes of implementation that we want to test
+                  window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+                  
+                  //prefixes of window.IDB objects
+                  window.IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction;
+                  window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange
+                  
+                  if (!window.indexedDB) {
+                  window.alert("Your browser doesn't support a stable version of IndexedDB.")
+                  }
+                  var db;
+                  var request = window.indexedDB.open("live_class", 1);
+                  
+                  request.onerror = function(event) {
+                  console.log("error: ");
+                  };
+                  
+                  request.onsuccess = function(event) {
+                  db = request.result;
+                  console.log("success: "+ db);
+                  console.log(dbExists);
+                  if(dbExists){
+                  console.log(dbExists);
+                  clearStorage();
+                  }
+                  };
+                  
+                  request.onupgradeneeded = function(event) {
+                  var db = event.target.result;
+                  var objectStore = db.createObjectStore("auth", {keyPath: "token"});
+                  db.createObjectStore("user_logs", {keyPath: 'user_id'});
+                  if(token){
+                  objectStore.add({"token":token});
+                  }
+                  dbExists= false;
+                  }
+                  
+                  function read() {
+                  var transaction = db.transaction(["employee"]);
+                  var objectStore = transaction.objectStore("employee");
+                  var request = objectStore.get("00-03");
+                  
+                  request.onerror = function(event) {
+                  console.log("Unable to retrieve daa from database!");
+                  };
+                  
+                  request.onsuccess = function(event) {
+                      // Do something with the request.result!
+                      if(request.result) {
+                       console.log("Name: " + request.result.name + ", Age: " + request.result.age + ", Email: " + request.result.email);
+                     }
+                  
+                     else {
+                       console.log("Kenny couldn't be found in your database!");
+                     }
+                   };
+                  }
+                  
+                  function readAll() {
+                   var objectStore = db.transaction("employee").objectStore("employee");
+                  
+                   objectStore.openCursor().onsuccess = function(event) {
+                    var cursor = event.target.result;
+                  
+                    if (cursor) {
+                     console.log("Name for id " + cursor.key + " is " + cursor.value.name + ", Age: " + cursor.value.age + ", Email: " + cursor.value.email);
+                     cursor.continue();
+                   }
+                  
+                   else {
+                     console.log("No more entries!");
+                   }
+                  };
+                  }
+                  
+                  function add() {
+                  var request = db.transaction(["auth"], "readwrite")
+                  .objectStore("auth")
+                  .add({"token":token});
+                  
+                  request.onsuccess = function(event) {
+                  console.log("auth token has been added to your database.");
+                  };
+                  
+                  request.onerror = function(event) {
+                  console.log("Unable to add data\r\nKenny is aready exist in your database! ");
+                  }
+                  }
+                  
+                  function remove() {
+                  var request = db.transaction(["auth"], "readwrite")
+                  .objectStore("auth")
+                  .delete(token);
+                  
+                  request.onsuccess = function(event) {
+                  console.log("auth entry has been removed from your database.");
+                  };
+                  }
+                  function clearStorage() {
+                  var request = db.transaction(["auth"], "readwrite")
+                  .objectStore("auth").clear();
+                  request.onsuccess = function(event) {
+                  console.log("auth entry has been removed from your database.");
+                  };
+                  }  
+               </script>
+               <script type="text/javascript">
+                  $(document).ready(function () {
+                    window.onload  = function () {
+                      window.addEventListener('message', function (event) {
+                        console.log(event.data);
+                        if (event.data.type == 'gotScreen') {
+                    //        extensionInstalled = true;
+                            //delete window.shouldChromExtInstall;
+                          } else if (event.data.type == 'getScreenPending') {
+                            window.clearTimeout(event.data.id);
+                    //       extensionInstalled = true;
+                  } else if (event.data.type == 'yes') {
+                    console.log(event.data);
+                    extensionInstalled = true;
+                  }
+                  
+                  
+                  
+                  });
+                  
+                      setTimeout(
+                        function () {
+                          window.postMessage({type: 'isInstalled', id: 1}, '*');
+                        },500
+                        );
+                  
+                  
+                      console.log('=============extensionInstalled=============');
+                      console.log(extensionInstalled);
+                    };
+                  
+                  
+                  });
+                  function screenShareCheck(){
+                    var browserCheck = detectBrowser();
+                    if(webURL.indexOf("localhost") == -1 ){
+                      if(browserCheck.browser == "Chrome" && !extensionInstalled){
+                        var url = 'https://chrome.google.com/webstore/detail/' + 'ijhofagnokdeoghaohcekchijfeffbjl';
+                        if(confirm('Chrome  screen share extension is required.Please reload this page after adding extension')){
+                          window.open(url);
+                        }
+                        return false;
+                      }else if(browserCheck.browser == 'Firefox'){
+                  //            if(browserCheck.version < 52){
+                  //               alert('Firefox version should be 52 or above to run some features of Live Class.Please upgrade your browser?'); 
+                  //               return false;
+                  //            }
+                  }
+                  
+                  } 
+                  return true;
+                  }
+                  
+                  
+                  function detectBrowser(){
+                  var N= navigator.appName;
+                  var UA= navigator.userAgent;
+                  var temp;
+                  var browserVersion = UA.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+                  if(browserVersion && (temp = UA.match(/version\/([\.\d]+)/i))!= null)
+                    browserVersion[2]= temp[1];
+                  var browserdetails = { 'browser': browserVersion[1], 'version': parseInt(browserVersion[2]) };
+                  //    browserVersion= browserVersion? "Browser:"+[browserVersion[1]+"\n Version:"+ browserVersion[2]]: [N, navigator.appVersion,'-?'];
+                  //    alert(browserVersion);
+                  console.log(browserdetails);
+                  return browserdetails;
+                  
+                  };
+                  
+                  function orderDisplay(mid, odType){
+                  $.ajax({
+                    url: "/nls/Modules/orderDisplayList",
+                    type: "post",
+                    data: {mid:mid, stype:0, odType:odType} ,
+                    beforeSend: function (msg) {
+                                //$("#loaderImg").show();
+                              },
+                              success: function (response) {                
+                                $("#displayorderList").html(response); 
+                                
+                              },
+                              error: function(jqXHR, textStatus, errorThrown) {
+                               console.log(textStatus, errorThrown);
+                             }
+                           });        
+                  }
+               </script>
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+               <div class="pull-right">
+                  Chandigarh University
+               </div>
+               <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+         </div>
+         <!-- /main container -->
+      </div>
+      <!-- /body container -->
+      <!-- jQuery -->
+      <script type="text/javascript" src="/nls/js/custom.js"></script>
+      <script type="text/javascript" src="/nls/js/validation.js"></script>
+      <script type="text/javascript" src="/nls/js/moment.min.js"></script>
+      <script type="text/javascript" src="/nls/js/bootstrap-datetimepicker.min.js"></script>
+      <script type="text/javascript" src="/nls/js/bootstrap-toggle.min.js"></script>
+      <script type="text/javascript" src="/nls/js/photo-gallery.js"></script>
+      <script type="text/javascript" src="/nls/js/bootstrap-multiselect.js"></script>
+      <script type="text/javascript">
+         $(function () {
+           var opts = {
+             format: "YYYY-MM-DD",
+             stepping: 5,
+             maxDate: new Date(),
+                           //minDate: moment.utc(),
+                           useCurrent: true,
+                           sideBySide: false,
+                           showTodayButton: false,
+                           widgetPositioning: {
+                             'vertical': 'bottom'
+                           },
+                           ignoreReadonly: true,
+                         };
+                         $('#dob').datetimepicker(opts);
+         
+                       });
+                     
+      </script>
+      <script>
+         function changecontroler(cn){
+           var controllerName = cn;
+           alert(controllerName);
+         }
+         /*load compose box from out side*/
+         function loadExternalCompose(batch_id,user_id)
+         {
+           $.ajax({
+             url: "/nls/Messages/compose",
+             type: "post",
+             data: {'type':'external_auto','batch_id':batch_id,'user_id':user_id},
+             beforeSend: function(msg){
+               $("#loaderImg").show();
+             },
+             success: function (data) {
+               $("#loaderImg").hide();
+         //var json = JSON.parse(data);
+         $('#composeMsgDiv').html(data);
+         $('.compose').slideToggle();
+         /*$('#compose, .compose-close').click(function(){
+         $('.compose').slideToggle();
+         });*/
+         },
+         error: function(jqXHR, textStatus, errorThrown) {
+         console.log(textStatus, errorThrown);
+         }
+         });                 
+         }
+         
+         /*load message on every 30 seconds*/
+         function loadMessageNotification()
+         {
+         /*$.ajax({
+             url: "/nls/Messages/topMessage",
+             type: "post",
+             data: {},
+             success: function (response) {
+                 $('#topMessageSpace').html(response);
+             },
+             error: function (jqXHR, textStatus, errorThrown) {
+                 console.log(textStatus, errorThrown);
+             }
+           });*/
+         
+         /* $.ajax({
+             url: "/nls/Notifications/topNotification",
+             type: "post",
+             data: {},
+             success: function (response) {
+                 $('#topNotification').html(response);
+             },
+             error: function (jqXHR, textStatus, errorThrown) {
+                 console.log(textStatus, errorThrown);
+             }
+           }); */
+         }
+         
+         loadMessageNotification();
+         setInterval(function () {
+           loadMessageNotification();
+         }, 30 * 1000); // 60 * 1000 milsec
+         
+      </script>
+      <script>
+         $(document).ready(function ()
+         {
+           var msgval = $("#flashMessage").text();
+           var trimtxt = msgval.trim();
+           var count = trimtxt.length;
+           if (count > 0)
+           {
+             $('.successMessage').show();
+           } else
+           {
+             $('.successMessage').hide();
+           }
+         });
+         $('.noty-remove').click(function () {
+           $('.successMessage').hide();
+         });
+      </script>
+      <script type="text/javascript" src="/nls/js/content-log.js"></script>
+      <!-- Large modal -->
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">Organizational Behaviour - Part 1</h4>
+               </div>
+               <form action="/nls/Modules/ManageModules/batchId:1/sessionId:1" class="form-horizontal form-label-left" id="BatchModuleManageModulesForm" method="post" accept-charset="utf-8">
+                  <div style="display:none;"><input type="hidden" name="_method" value="POST"></div>
+                  <div class="modal-body">
+                     <div class="form-group">
+                        <label style="margin-bottom:10px;">Please select a Module</label>
+                        <input type="hidden" name="data[BatchModule][attach]" value="" id="BatchModuleAttach">                        
+                        <div class="input select">
+                           <select name="data[BatchModule][moduleId]" class="form-control" id="BatchModuleModuleId">
+                              <option value="">Choose one</option>
+                              <option value="1">Chapter -1 </option>
+                              <option value="2">Chapter -2</option>
+                           </select>
+                        </div>
+                        <br>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                     <button type="submit" class="btn btn-primary">Proceed</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade bs-example-modal-view-testimonial" tabindex="-1" role="dialog" aria-hidden="true" id="viewTesti"></div>
+      <div class="modal fade bs-example-modal-view-Question" tabindex="-1" role="dialog" aria-hidden="true" id="viewTestQ"></div>
+      <div class="modal fade bs-example-modal-view-attendance" tabindex="-1" role="dialog" aria-hidden="true" id="viewLCAttendance"></div>
+      <div class="modal fade bs-example-modal-view-online-users" tabindex="-1" role="dialog" aria-hidden="true" id="viewOnlineUsers"></div>
+      <div class="modal fade bs-example-modal-view-assessment-attempt" tabindex="-1" role="dialog" aria-hidden="true" id="viewAssessmentAttempt"></div>
+      <div id="composeMsgDiv"></div>
+   </body>
+</html>
